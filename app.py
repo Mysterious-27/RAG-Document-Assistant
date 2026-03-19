@@ -65,7 +65,7 @@ else:
 
         
 
-        st.session_state.messages.append(("assistant", response))
+        
         prompt = f"""
         You are an AI assistant.
         Use the context below to answer the question. If the answer is partially available, try to summarise.
@@ -79,7 +79,7 @@ else:
         Answer clearly:
         """
         response = llm.invoke(prompt)       
-
+        st.session_state.messages.append(("assistant", response))
 # Display chat history
 for role, message in st.session_state.messages:
     if role == "user":

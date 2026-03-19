@@ -7,3 +7,4 @@ ollama
 pypdf
 langchain-openai
 openai
+langchain-text-splitters

@@ -59,7 +59,7 @@ else:
 ## Ollama
         # llm = Ollama(model="llama3")
 ## OpenAI
-        os.environ["OPENAI_API_KEY"] = "OPEN_AI_KEY"
+        os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
         llm = ChatOpenAI(model="gpt-3.5-turbo")
 

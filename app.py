@@ -66,7 +66,7 @@ else:
         # llm = ChatOpenAI(model="gpt-3.5-turbo")
 ## Groq
         llm = ChatGroq(
-    groq_api_key="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",
+    groq_api_key="YOUR_API_KEY",
     model_name="openai/gpt-oss-120b"
 )
 ## Gemini

@@ -68,7 +68,7 @@ else:
     #     llm = ChatGroq(
     # groq_api_key="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",
     # model_name="llama3-8b-8192"   # ⚡ correct + fast
-)
+# )
 ## Gemini
         llm = ChatGoogleGenerativeAI(
         model="gemini-1.5-flash",

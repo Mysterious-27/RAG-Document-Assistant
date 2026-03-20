@@ -65,15 +65,15 @@ else:
 
         # llm = ChatOpenAI(model="gpt-3.5-turbo")
 ## Groq
-        llm = ChatGroq(
-    groq_api_key="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",
-    model_name="llama3-8b-8192"   # ⚡ correct + fast
+    #     llm = ChatGroq(
+    # groq_api_key="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",
+    # model_name="llama3-8b-8192"   # ⚡ correct + fast
 )
 ## Gemini
-    #     llm = ChatGoogleGenerativeAI(
-    #     model="gemini-1.5-flash",
-    #     google_api_key="YOUR_API_KEY"
-    # )
+        llm = ChatGoogleGenerativeAI(
+        model="gemini-1.5-flash",
+        google_api_key="AIzaSyAxrS6g9u1fOBk7gDfktIvN0DEr5cL-XXk"
+    )
         
         prompt = f"""
         You are an AI assistant.

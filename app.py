@@ -70,12 +70,10 @@ else:
     model_name="llama3-70b-8192"
 )
 ## Gemini
-        from langchain_google_genai import ChatGoogleGenerativeAI
-
-    llm = ChatGoogleGenerativeAI(
-        model="gemini-1.5-flash",
-        google_api_key="YOUR_API_KEY"
-    )
+    #     llm = ChatGoogleGenerativeAI(
+    #     model="gemini-1.5-flash",
+    #     google_api_key="YOUR_API_KEY"
+    # )
         
         prompt = f"""
         You are an AI assistant.

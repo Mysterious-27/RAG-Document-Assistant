@@ -88,7 +88,7 @@ else:
         Answer clearly:
         """
         response = llm.invoke(prompt)       
-        st.session_state.messages.append(("assistant", response))
+        st.session_state.messages.append(("assistant", response.content))
 # Display chat history
 for role, message in st.session_state.messages:
     if role == "user":

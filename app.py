@@ -4,6 +4,7 @@ from langchain_text_splitters import CharacterTextSplitter
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from langchain_community.vectorstores import FAISS
 from langchain_groq import ChatGroq
+# from langchain_google_genai import ChatGoogleGenerativeAI
 # from langchain_community.llms import Ollama
 import tempfile
 # from langchain_openai import ChatOpenAI
@@ -63,11 +64,18 @@ else:
         # os.environ["OPENAI_API_KEY"] = st.secrets["OPENAI_API_KEY"]
 
         # llm = ChatOpenAI(model="gpt-3.5-turbo")
-## Gemini
+## Groq
         llm = ChatGroq(
     groq_api_key="YOUR_API_KEY",
     model_name="llama3-70b-8192"
 )
+## Gemini
+        from langchain_google_genai import ChatGoogleGenerativeAI
+
+    llm = ChatGoogleGenerativeAI(
+        model="gemini-1.5-flash",
+        google_api_key="YOUR_API_KEY"
+    )
         
         prompt = f"""
         You are an AI assistant.

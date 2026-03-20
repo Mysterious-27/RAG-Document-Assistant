@@ -11,10 +11,10 @@ import tempfile
 import os
 
 
-st.set_page_config(page_title="AI Document Assistant", layout="wide")
+st.set_page_config(page_title="DocQuer.AI", layout="wide")
 
-st.title("🤖 AI Document Assistant")
-st.markdown("Upload PDFs and chat with them like ChatGPT")
+st.title("📄 DocQuer.AI")
+st.markdown("Chat with your PDFs instantly ⚡")
 
 # Upload section (ALWAYS visible)
 uploaded_files = st.file_uploader("Upload PDFs", type="pdf", accept_multiple_files=True)

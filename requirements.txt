@@ -8,3 +8,4 @@ pypdf
 langchain-openai
 openai
 langchain-text-splitters
+langchain-groq 

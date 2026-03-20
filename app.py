@@ -71,7 +71,7 @@ else:
 # )
 ## Gemini
         llm = ChatGoogleGenerativeAI(
-        model="gemini-pro",
+        model="models/gemini-2.5-flash",
         google_api_key="AIzaSyAxrS6g9u1fOBk7gDfktIvN0DEr5cL-XXk"
     )
         
